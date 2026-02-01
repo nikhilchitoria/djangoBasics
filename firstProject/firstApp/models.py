@@ -3,6 +3,7 @@ from django.db import models
 class MenuItem(models.Model):
     name = models.CharField(max_length=250)
     price = models.IntegerField()
+    condition = models.CharField(max_length=250)
 
 class Reservation(models.Model):
     first_name = models.CharField(max_length=255)
