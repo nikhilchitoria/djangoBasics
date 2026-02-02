@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>djangoBasics</title>
+    <title>Second App</title>
     <style>
         body{
             color:white;
@@ -23,17 +23,7 @@
     </style>
 </head>
 <body>
-    <h1>This is HOME PAGE.</h1>
-    {% comment %} <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Save</button>
-    </form> {% endcomment %}
-    <form method="POST">
-        {% csrf_token %}
-        {{form.as_table}}
-        <button type="submit">Request</button>
-    </form>
-    <a href="{% url 'firstpage'%}">Go to FIRST PAGE.</a>
+    <h1>This is SECOND PAGE.</h1>
+    <a href="{% url 'home'%}">Go to HOME PAGE.</a>
 </body>
 </html>
